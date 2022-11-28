@@ -93,7 +93,12 @@ background-size: cover;;  font-family:
 	</script>
 </body>
 
-					if(document.location.href.startsWith("file:")) {
+ <!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="classes.js"></script>
+<script type="text/javascript">
+if(document.location.href.startsWith("file:")) {
 alert("You're not supposed to 'open' this file in your browser. Please upload this folder to your HTTP(s) server and access it via the internet. This is not a bug, please read the documentation");
 }else {
 window.addEventListener("load", function(){
